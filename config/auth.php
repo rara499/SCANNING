@@ -41,7 +41,11 @@ return [
     'guards' => [
         'web' => [
             'driver' => 'session',
-            'provider' => 'users', // <-- Pastikan ini mengarah ke 'users'
+            'provider' => 'users',
+        ],
+        'siswa' => [
+            'driver' => 'session',
+            'provider' => 'siswa',
         ],
     ],
     /*
@@ -64,12 +68,12 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => App\Models\Siswa::class, // <-- PASTIKAN BARIS INI SEPERTI INI
-    ],
-        // 'users' => [
-        //     'driver' => 'database',
-        //     'table' => 'users',
-        // ],
+            'model' => App\Models\User::class,
+        ],
+        'siswa' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Siswa::class,
+        ],
     ],
 
     /*

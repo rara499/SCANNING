@@ -89,7 +89,7 @@
         
         <aside class="sidebar">
             <div class="sidebar-brand">
-                SC SCANING
+                SCANNING
             </div>
             
             <ul class="sidebar-menu">
@@ -98,17 +98,27 @@
                         Dashboard Umum
                     </a>
                 </li>
+                @if(!auth('siswa')->check())
                 <li>
                     <a href="{{ route('data.siswa') }}" class="{{ Request::is('data-siswa') ? 'active' : '' }}">
                         Data Siswa
                     </a>
                 </li>
+                @else
+                <li>
+                    <a href="{{ route('siswa.show', auth('siswa')->user()->nis) }}" class="{{ Request::is('data-siswa*') ? 'active' : '' }}">
+                        Data Diri Saya
+                    </a>
+                </li>
+                @endif
+                @if(!auth('siswa')->check())
                 <li>
                     <a href="{{ route('input.catatan') }}" class="{{ Request::is('input-catatan') ? 'active' : '' }}">
                         Form Input Catatan
                     </a>
                 </li>
-                </ul>
+                @endif
+            </ul>
         </aside>
 
         <main class="main-container">

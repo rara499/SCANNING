@@ -176,15 +176,11 @@
             <div class="grid-layout">
                 <a href="#" class="menu-button">Dashboard Umum</a>
                 <a href="#" class="menu-button">Data Siswa</a>
-                <a href="#" class="menu-button">Dashboard Guru</a>
-                <a href="#" class="menu-button">Surat Panggilan</a>
                 <a href="#" class="menu-button">Daftar Usulan<br>Verifikasi</a>
-                <a href="#" class="menu-button">Pencatatan Aktivitas<br>& Karakter</a>
                 <a href="#" class="menu-button">Dashboard Verifikasi</a>
                 <a href="#" class="menu-button">Dashboard Verifikasi<br>Catatan</a>
                 <a href="#" class="menu-button">Form Input Catatan</a>
                 <a href="#" class="menu-button">Daftar Riwayat<br>Catatan</a>
-                <a href="#" class="menu-button">Poin Siswa Perkelas</a>
                 <a href="#" class="menu-button">Halaman Profil<br>Pengguna</a>
             </div>
         </div>
